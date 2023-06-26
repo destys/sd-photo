@@ -1,0 +1,88 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 0px;
+
+	width: rem(210);
+	height: rem(50);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 25px;
+	font-size: rem(15);
+
+	transition: transform 0.2s linear;
+
+	&_transparent {
+		background: rgba(29, 29, 31, 0.2);
+		backdrop-filter: blur(5px);
+		border: 2px solid #ffffff;
+		color: #fff;
+	}
+
+	&._shine {
+		position: relative;
+		overflow: hidden;
+		background-color: $mainColor;
+
+		font-weight: 600;
+		color: #fff;
+
+		&::after {
+			content: "";
+			display: block;
+			width: 20px;
+			height: 200px;
+			margin-left: 50px;
+			background: #fff;
+			background: linear-gradient(
+				to bottom,
+				rgba(255, 255, 255, 0.5) 0%,
+				rgba(255, 255, 255, 1) 50%,
+				rgba(255, 255, 255, 0.5) 100%
+			);
+			left: -40px;
+			top: -100px;
+			z-index: 1;
+			transform: rotate(45deg);
+			position: absolute;
+			animation: movingFlare 3s ease-in-out 0.05s infinite;
+			filter: blur(10px);
+		}
+	}
+
+	&._purple {
+		background: linear-gradient(90deg, #82009f 0%, #5d34af 100%);
+		color: #fff;
+	}
+
+	&:active {
+		box-shadow: none;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}
+
+@keyframes movingFlare {
+	0% {
+		left: -30px;
+		margin-left: 0px;
+	}
+	30% {
+		left: 110%;
+		margin-left: 80px;
+	}
+	100% {
+		left: 110%;
+		margin-left: 80px;
+	}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Контакты"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <section class="contacts">
+                <div class="contacts__map">
+                    <div style="position:relative;overflow:hidden;"><a
+                            href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
+                            href="https://yandex.ru/maps/213/moscow/house/bolshaya_tatarskaya_ulitsa_21s4/Z04YcARkTUEEQFtvfXtyeHpnZA==/?from=tabbar&ll=37.634442%2C55.739640&source=serp_navig&utm_medium=mapframe&utm_source=maps&z=16.78"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт,
+                            навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUZE2g4PB"
+                            width="100%" height="600" frameborder="1" allowfullscreen="true"
+                            style="position:relative;"></iframe></div>
+                </div>
+                @@include('html/_crumbs.htm',{
+                "title":"Контакты"
+                })
+                <div class="contacts__container">
+                    <h1 class="contacts__title _section-title">Контакты</h1>
+                    <div class="contacts__content">
+                        <div class="contacts__info info-contacts">
+                            <div class="info-contacts__title">Фотостудия SD-Studio</div>
+                            <div class="info-contacts__item _icon-location">г. Москва, ул. Большая Татарская д. 21 к4
+                            </div>
+                            <div class="info-contacts__item _icon-clock">Ежедневно с 09:00 до 23:00 </div>
+                            <a href="tel:+7(916) 345-86-18" class="info-contacts__item _icon-tel">+7(916) 345-86-18</a>
+                            <a href="mailto:info@fotosdm.ru" class="info-contacts__item _icon-mail">info@fotosdm.ru</a>
+                            <a href="mailto:info@fotosdm.ru" class="info-contacts__item _icon-tg">Telegram</a>
+                            <a href="mailto:info@fotosdm.ru" class="info-contacts__item _icon-wa">WhatsApp</a>
+                        </div>
+                        <form action="#" class="contacts__form form-contacts">
+                            <div class="form-contacts__title">Свяжитесь с нами</div>
+                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                placeholder="Ваше имя*" class="form-contacts__input input">
+                            <input autocomplete="off" type="email" name="form[]" data-error="Ошибка"
+                                placeholder="Ваш E-mail*" class="form-contacts__input input">
+                            <div class="form-contacts__label">Ваше сообщение</div>
+                            <textarea autocomplete="off" name="form[]" placeholder="" data-error="Ошибка"
+                                class="form-contacts__textarea input"></textarea>
+                            <div class="form-contacts__footer">
+                                <a href="#" class="form-contacts__rules" target="_blank">*Политика
+                                    конфиденциальности</a>
+                                <button type="submit" class="form-contacts__button button">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

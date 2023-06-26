@@ -1,0 +1,22 @@
+.crumbs {
+    // .crumbs__container
+    &__container {
+    }
+    // .crumbs__list
+    &__list {
+        display: flex;
+        padding: rem(30) 0 rem(35);
+    }
+    // .crumbs__item
+    &__item {
+        color: $purple;
+    }
+    // .crumbs__link
+    &__link {
+        color: $mainColor;
+        &::after {
+            content: "/";
+            padding: 0 rem(10);
+        }
+    }
+}

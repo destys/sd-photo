@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Блог"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            @@include('html/_crumbs.htm',{
+            "title":"Блог"
+            })
+            <section class="blog">
+                <div class="blog__container">
+                    <h1 class="blog__title _section-title">Блог</h1>
+                    <div class="blog__content">
+                        <div class="blog__posts posts-blog">
+                            <div class="posts-blog__item item-posts">
+                                <a href="#" class="item-posts__image">
+                                    <img data-src="@img/posts/post-1.jpg" alt="post">
+                                </a>
+                                <a href="#" class="item-posts__title">Бизнес-портрет. Нюансы фотосессии для создания
+                                    нужного имиджа: Одежда и аксессуары. Business casual</a>
+                                <div class="item-posts__excerpt">Продуманный имидж для фотосессии – это обязательное
+                                    условие создания стильного и эффектного бизнес-портрета. Если вы хотите выглядеть
+                                    как успешный деловой человек, который уверенно достигает поставленных целей, то для
+                                    фотосъемки в студии или офисе выбирайте одежду в едином деловом стиле. (Лучше
+                                    согласовать все детали с фотографом). </div>
+                                <div class="item-posts__footer footer-posts-item">
+                                    <div class="footer-posts-item__share share-post-item">
+                                        <div class="share-post-item__title">Поделиться:</div>
+                                        <a href="#" class="share-post-item__link _icon-tg"></a>
+                                        <a href="#" class="share-post-item__link _icon-wa"></a>
+                                    </div>
+                                    <a href="#" class="footer-posts-item__link">Подробнее ></a>
+                                </div>
+                            </div>
+                            <div class="posts-blog__item item-posts">
+                                <a href="#" class="item-posts__image">
+                                    <img data-src="@img/posts/post-2.jpg" alt="post">
+                                </a>
+                                <a href="#" class="item-posts__title">Фото для резюме. Всё, что нужно знать о Бизнес
+                                    портрете. Нужен ли профессиональный фотограф?</a>
+                                <div class="item-posts__excerpt">Фото, находящееся в Вашем резюме. Из моей практики
+                                    создания фотографий для бизнеса, могу выделить главные необходимые аспекты для
+                                    создания фото для резюме:
+                                    Вы должны выглядеть примерно, как на собеседование в организации (возможен тот же
+                                    пиджак, галстук или рубашка). Задача вроде несложная, но очень важная... </div>
+                                <div class="item-posts__footer footer-posts-item">
+                                    <div class="footer-posts-item__share share-post-item">
+                                        <div class="share-post-item__title">Поделиться:</div>
+                                        <a href="#" class="share-post-item__link _icon-tg"></a>
+                                        <a href="#" class="share-post-item__link _icon-wa"></a>
+                                    </div>
+                                    <a href="#" class="footer-posts-item__link">Подробнее ></a>
+                                </div>
+                            </div>
+                            <div class="posts-blog__pagination pagination-blog-posts">
+                                <ul class="pagination-blog-posts__list">
+                                    <li class="pagination-blog-posts__item disabled">
+                                        <a href="#" class="pagination-blog-posts__link"><img src="@img/arr-left.svg" alt=""></a>
+                                    </li>
+                                    <li class="pagination-blog-posts__item">
+                                        1
+                                    </li>
+                                    <li class="pagination-blog-posts__item">
+                                        <a href="#" class="pagination-blog-posts__link">2</a>
+                                    </li>
+                                    <li class="pagination-blog-posts__item">
+                                        <a href="#" class="pagination-blog-posts__link">3</a>
+                                    </li>
+                                    <li class="pagination-blog-posts__item">
+                                        <a href="#" class="pagination-blog-posts__link">4</a>
+                                    </li>
+                                    <li class="pagination-blog-posts__item">
+                                        <a href="#" class="pagination-blog-posts__link">5</a>
+                                    </li>
+                                    <li class="pagination-blog-posts__item">
+                                        <a href="#" class="pagination-blog-posts__link"><img src="@img/arr-left.svg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <aside data-spollers="767, max" class="blog__sidebar sidebar-blog">
+                            <div class="sidebar-blog__title" data-spoller>Популярные посты</div>
+                            <div class="sidebar-blog__list">
+                                <div class="sidebar-blog__item item-blog-sidebar">
+                                    <div class="item-blog-sidebar__image">
+                                        <img data-src="@img/posts/popular-post.jpg" alt="popular">
+                                    </div>
+                                    <div class="item-blog-sidebar__info">
+                                        <a href="#" class="item-blog-sidebar__title">Фотосъемка в офисе: комфортная
+                                            фотосессия для корпоративных клиентов</a>
+                                        <div class="item-blog-sidebar__viewers">
+                                            <img src="@img/view.svg" alt="view">
+                                            <span>325</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-blog__item item-blog-sidebar">
+                                    <div class="item-blog-sidebar__image">
+                                        <img data-src="@img/posts/popular-post.jpg" alt="popular">
+                                    </div>
+                                    <div class="item-blog-sidebar__info">
+                                        <a href="#" class="item-blog-sidebar__title">Фотосъемка в офисе: комфортная
+                                            фотосессия для корпоративных клиентов</a>
+                                        <div class="item-blog-sidebar__viewers">
+                                            <img src="@img/view.svg" alt="view">
+                                            <span>325</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-blog__item item-blog-sidebar">
+                                    <div class="item-blog-sidebar__image">
+                                        <img data-src="@img/posts/popular-post.jpg" alt="popular">
+                                    </div>
+                                    <div class="item-blog-sidebar__info">
+                                        <a href="#" class="item-blog-sidebar__title">Фотосъемка в офисе: комфортная
+                                            фотосессия для корпоративных клиентов</a>
+                                        <div class="item-blog-sidebar__viewers">
+                                            <img src="@img/view.svg" alt="view">
+                                            <span>325</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-blog__item item-blog-sidebar">
+                                    <div class="item-blog-sidebar__image">
+                                        <img data-src="@img/posts/popular-post.jpg" alt="popular">
+                                    </div>
+                                    <div class="item-blog-sidebar__info">
+                                        <a href="#" class="item-blog-sidebar__title">Фотосъемка в офисе: комфортная
+                                            фотосессия для корпоративных клиентов</a>
+                                        <div class="item-blog-sidebar__viewers">
+                                            <img src="@img/view.svg" alt="view">
+                                            <span>325</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-blog__item item-blog-sidebar">
+                                    <div class="item-blog-sidebar__image">
+                                        <img data-src="@img/posts/popular-post.jpg" alt="popular">
+                                    </div>
+                                    <div class="item-blog-sidebar__info">
+                                        <a href="#" class="item-blog-sidebar__title">Фотосъемка в офисе: комфортная
+                                            фотосессия для корпоративных клиентов</a>
+                                        <div class="item-blog-sidebar__viewers">
+                                            <img src="@img/view.svg" alt="view">
+                                            <span>325</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-blog__item item-blog-sidebar">
+                                    <div class="item-blog-sidebar__image">
+                                        <img data-src="@img/posts/popular-post.jpg" alt="popular">
+                                    </div>
+                                    <div class="item-blog-sidebar__info">
+                                        <a href="#" class="item-blog-sidebar__title">Фотосъемка в офисе: комфортная
+                                            фотосессия для корпоративных клиентов</a>
+                                        <div class="item-blog-sidebar__viewers">
+                                            <img src="@img/view.svg" alt="view">
+                                            <span>325</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-blog__item item-blog-sidebar">
+                                    <div class="item-blog-sidebar__image">
+                                        <img data-src="@img/posts/popular-post.jpg" alt="popular">
+                                    </div>
+                                    <div class="item-blog-sidebar__info">
+                                        <a href="#" class="item-blog-sidebar__title">Фотосъемка в офисе: комфортная
+                                            фотосессия для корпоративных клиентов</a>
+                                        <div class="item-blog-sidebar__viewers">
+                                            <img src="@img/view.svg" alt="view">
+                                            <span>325</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-blog__item item-blog-sidebar">
+                                    <div class="item-blog-sidebar__image">
+                                        <img data-src="@img/posts/popular-post.jpg" alt="popular">
+                                    </div>
+                                    <div class="item-blog-sidebar__info">
+                                        <a href="#" class="item-blog-sidebar__title">Фотосъемка в офисе: комфортная
+                                            фотосессия для корпоративных клиентов</a>
+                                        <div class="item-blog-sidebar__viewers">
+                                            <img src="@img/view.svg" alt="view">
+                                            <span>325</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-blog__item item-blog-sidebar">
+                                    <div class="item-blog-sidebar__image">
+                                        <img data-src="@img/posts/popular-post.jpg" alt="popular">
+                                    </div>
+                                    <div class="item-blog-sidebar__info">
+                                        <a href="#" class="item-blog-sidebar__title">Фотосъемка в офисе: комфортная
+                                            фотосессия для корпоративных клиентов</a>
+                                        <div class="item-blog-sidebar__viewers">
+                                            <img src="@img/view.svg" alt="view">
+                                            <span>325</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            @@include('html/_callback.htm',{})
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

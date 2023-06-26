@@ -1,0 +1,60 @@
+.photo {
+    // .photo__container
+    &__container {
+    }
+    // .photo__title
+    &__title {
+    }
+    // .photo__list
+    &__list {
+        display: grid;
+        gap: rem(20) rem(30);
+        grid-template-columns: repeat(auto-fill, minmax(rem(250), 1fr));
+
+        margin-bottom: rem(60);
+
+        @media (min-width: $mobileSmall) {
+            grid-template-columns: repeat(auto-fill, minmax(rem(350), 1fr));
+        }
+
+        @media (min-width: $tablet) {
+            grid-template-columns: repeat(auto-fill, minmax(rem(450), 1fr));
+        }
+
+        @media (min-width: $pc) {
+            grid-template-columns: repeat(auto-fill, minmax(rem(650), 1fr));
+        }
+    }
+    // .photo__item
+    &__item {
+        position: relative;
+
+        &:nth-child(2n + 2) {
+            padding-top: rem(30);
+        }
+    }
+}
+.item-photo {
+    // .item-photo__image
+    &__image {
+        margin-bottom: rem(28);
+        position: relative;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15), 0px 11px 37px rgba(0, 0, 0, 0.4);
+        img {
+            width: 100%;
+        }
+    }
+    // .item-photo__title
+    &__title {
+        position: absolute;
+        bottom: rem(20);
+        left: rem(20);
+        text-transform: uppercase;
+        font-size: rem(20);
+        @include adaptiveValue("font-size", 20, 16, 992, 768, 1);
+        color: #fff;
+    }
+    // .item-photo__text
+    &__text {
+    }
+}

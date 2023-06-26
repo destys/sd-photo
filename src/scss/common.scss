@@ -1,0 +1,38 @@
+// Заголовки, общие БЄМ блоки и проче...
+._section-title {
+    margin-bottom: rem(30);
+    @include adaptiveValue("font-size", 48, 24, 1440, 767, 1);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+._bg-grey {
+    background-color: $light-grey;
+}
+
+._bg-white {
+    background-color: #fff;
+}
+
+._pt0 {
+    padding-top: 0 !important;
+}
+
+.wpcf7-form-control-wrap {
+    display: block;
+    margin-bottom: rem(30);
+}
+
+.custom-post {
+    margin: rem(60) 0;
+
+    .item-posts__excerpt h1,
+    .item-posts__excerpt h2,
+    .item-posts__excerpt h3 {
+        text-align: left !important;
+    }
+
+    @media (min-width: $tablet) {
+        margin: rem(100) 0;
+    }
+}

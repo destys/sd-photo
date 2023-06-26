@@ -1,0 +1,99 @@
+.contacts {
+    margin-bottom: rem(60);
+    // .contacts__map
+    &__map {
+    }
+    // .contacts__container
+    &__container {
+    }
+    // .contacts__title
+    &__title {
+        margin-top: rem(20);
+        margin-bottom: rem(60);
+    }
+    // .contacts__content
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: rem(30);
+
+        @media (min-width: $tablet) {
+            flex-direction: row;
+        }
+    }
+    // .contacts__info
+    &__info {
+    }
+    // .contacts__form
+    &__form {
+        max-width: rem(760);
+
+        .wpcf7-form-control-wrap {
+            margin-bottom: rem(30);
+        }
+
+        @media (min-width: $tablet) {
+            flex: 0 0 rem(570);
+        }
+    }
+}
+.info-contacts {
+    // .info-contacts__title
+    &__title {
+        margin-bottom: rem(30);
+        font-weight: 500;
+        font-size: rem(24);
+        text-transform: uppercase;
+    }
+    // .info-contacts__item
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: rem(10);
+
+        width: fit-content;
+
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+        }
+    }
+}
+.form-contacts {
+    // .form-contacts__title
+    &__title {
+        margin-bottom: rem(30);
+        font-weight: 500;
+        font-size: rem(24);
+        text-transform: uppercase;
+    }
+    // .form-contacts__input
+    &__input {
+        border-color: #898989;
+        margin-bottom: 0;
+        padding-bottom: rem(15);
+    }
+    // .form-contacts__label
+    &__label {
+    }
+    // .form-contacts__textarea
+    &__textarea {
+        border: 1px solid $mainColor;
+        height: rem(162);
+    }
+    // .form-contacts__footer
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    // .form-contacts__rules
+    &__rules {
+    }
+    // .form-contacts__button
+    &__button {
+        box-shadow: none;
+        border: 1px solid #898989;
+        color: $mainColor;
+    }
+}

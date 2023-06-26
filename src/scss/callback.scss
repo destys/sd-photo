@@ -1,0 +1,95 @@
+.callback {
+    padding: rem(40) 0 rem(50);
+    background: url("@img/callback-bg.png") 0 0 no-repeat;
+    background-size: cover !important;
+    // .callback__container
+    &__container {
+        max-width: rem(690);
+    }
+    // .callback__title
+    &__title {
+        font-size: rem(24);
+    }
+    // .callback__social
+    &__social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: rem(20);
+        margin-bottom: rem(30);
+
+        @media (min-width: $mobile) {
+            justify-content: space-between;
+        }
+    }
+    // .callback__text
+    &__text {
+        margin-bottom: rem(30);
+        text-align: center;
+    }
+    // .callback__form
+    &__form {
+    }
+}
+.social-callback {
+    // .social-callback__item
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(10);
+
+        flex: 0 0 rem(210);
+        height: rem(50);
+
+        border: 2px solid #1d1d1f;
+        border-radius: 25px;
+
+        transition: color 0.2s linear, border-color 0.2s linear;
+
+        &:first-child {
+            &::before {
+                color: #25d366;
+            }
+        }
+
+        &:nth-child(2) {
+            &::before {
+                color: #0088cc;
+            }
+        }
+
+        &:last-child {
+            &::before {
+                color: $purple;
+            }
+        }
+
+        &:hover {
+            border-color: $purple;
+            color: $purple;
+        }
+    }
+}
+.form-callback {
+    // .form-callback__input
+    &__input {
+        margin-bottom: 0;
+        padding-bottom: rem(15);
+    }
+    // .form-callback__footer
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: rem(20);
+        align-items: center;
+
+        @media (min-width: $mobileSmall) {
+            flex-direction: row;
+        }
+    }
+    // .form-callback__privacy
+    &__privacy {
+    }
+}
